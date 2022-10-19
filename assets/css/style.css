@@ -338,3 +338,11 @@ a {
     line-height: 1.4;
     word-spacing: 100vw;
 }
+
+/* footer */
+footer {
+    background: linear-gradient(var(--black), black);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
