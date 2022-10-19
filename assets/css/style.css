@@ -1,15 +1,34 @@
+/* general */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+:root {
+    --primary-color: rgb(71, 221, 218); 
+    --secondary-color: rgb(57, 179, 177);
+    --black: rgb(36, 36, 36);
+  }
 
 @font-face {
     font-family: "vanilla";
     src: url("/assets/fonts/Vanilla\ Twilight\ Script.eot");
     src: url("/assets/fonts/Vanilla\ Twilight\ Script.eot?iefix") format("embedded-opentype"),
-         url("/assets/fonts/Vanilla\ Twilight\ Script.woff") format("woff"),
-         url("/assets/fonts/Vanilla\ Twilight\ Script.ttf") format("truetype"),
-         url("/assets/fonts/Vanilla\ Twilight\ Script.svg") format("svg");
+        url("/assets/fonts/Vanilla\ Twilight\ Script.woff") format("woff"),
+        url("/assets/fonts/Vanilla\ Twilight\ Script.ttf") format("truetype"),
+        url("/assets/fonts/Vanilla\ Twilight\ Script.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "tommy";
+    src: url("/assets/fonts/madetommy.eot scripts.eot");
+    src: url("/assets/fonts/madetommy.eot?iefix") format("embedded-opentype"),
+        url("/assets/fonts/madetommy.woff") format("woff"),
+        url("/assets/fonts/madetommy.ttf") format("truetype"),
+        url("/assets/fonts/madetommy.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -17,12 +36,209 @@
 @font-face {
     font-family: "icons";
     src: url("/assets/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
-         url("/assets/fonts/websymbols-regular-webfont.eot");
+        url("/assets/fonts/websymbols-regular-webfont.eot");
     src: url("/assets/fonts/websymbols-regular-webfont.eot") format("embedded-opentype"),
-         url("/assets/fonts/websymbols-regular-webfont.woff") format("woff"),
-         url("/assets/fonts/websymbols-regular-webfont.ttf") format("truetype");
+        url("/assets/fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("/assets/fonts/websymbols-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-/* GENERAL */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+.showcase {
+    background-color: rgb(184, 184, 184);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.75; */
+    overflow: hidden;
+    background: black url("/assets/img/1.png ") loop muted center center/cover;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.video-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.headerContent {
+    z-index: 100;
+}
+
+#meditionalLogo {
+    scale: 1;
+    transition: all .5s;
+}
+
+#meditionalLogo:hover {
+    scale: 1.1;
+}
+
+#textHeader {
+    font-family: 'vanilla';
+    color: white;
+    font-size: 6rem;
+    transition: all 1s;
+}
+
+#textHeader:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    scale: 1.2;
+}
+
+#downArrow {
+    font-family: 'icons';
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    transition: all .5s;
+}
+
+#downArrow:hover {
+    text-shadow: 0px 0px 20px #fff;
+}
+
+/* navbar */
+#navbar {
+    box-shadow: 0px 0px 10px 1px var(--gray3);
+}
+
+#navbar div {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color)
+}
+
+#navbar div a {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+#navbar div a:hover {
+    color: white;
+    transition: color .3s ease, color .3s ease;
+}
+
+#navbar div span {
+    font-family: 'tommy';
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    transition: all .5s;
+}
+
+#navbar div span:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    scale: 1.1;
+}
+
+#navbar div img {
+    margin-right: .5rem;
+    height: 2rem;
+}
+
+#navbar button {
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    padding: .2rem .7rem;
+    margin: .7rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+#navbar.open button {
+    background-color: white;
+    color: var(--white);    
+    border-radius: 2rem;
+}
+
+#navbar ul {
+    background: linear-gradient(var(--primary-color),var(--secondary-color));
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    transition: max-height .3s ease;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+#navbar.open ul {
+    max-height: 350px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar ul a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--white);
+    transition: color .3s ease, background-color .3s ease;
+}
+
+
+#navbar ul a:hover,
+#navbar ul a:focus {
+    color: var(--black);
+    background-color: white;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#toggle:hover {
+    background-color: var(--black);
+}
+
+#active {
+    background-color: var(--primary-color);
+}
