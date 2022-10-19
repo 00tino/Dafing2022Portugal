@@ -340,7 +340,7 @@ a {
 }
 
 /* footer */
-footer {
+#footer {
     background: linear-gradient(var(--black), black);
     color: white;
     text-align: center;
