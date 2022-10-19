@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "vanilla";
+    src: url("/assets/fonts/Vanilla\ Twilight\ Script.eot");
+    src: url("/assets/fonts/Vanilla\ Twilight\ Script.eot?iefix") format("embedded-opentype"),
+         url("/assets/fonts/Vanilla\ Twilight\ Script.woff") format("woff"),
+         url("/assets/fonts/Vanilla\ Twilight\ Script.ttf") format("truetype"),
+         url("/assets/fonts/Vanilla\ Twilight\ Script.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("/assets/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+         url("/assets/fonts/websymbols-regular-webfont.eot");
+    src: url("/assets/fonts/websymbols-regular-webfont.eot") format("embedded-opentype"),
+         url("/assets/fonts/websymbols-regular-webfont.woff") format("woff"),
+         url("/assets/fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERAL */
