@@ -216,6 +216,7 @@ a {
     position: absolute;
     width: 100%;
     overflow: hidden;
+    z-index: 1000;
 }
 
 #navbar.open ul {

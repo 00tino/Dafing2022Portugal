@@ -1,0 +1,153 @@
+#staff {
+    background-color: var(--background-dark);
+}
+
+#staff hr {
+    height: .1rem;
+    max-width: 100%;
+    align-items: center;
+    border: 0;
+    background-image: radial-gradient(white, var(--background-dark));
+}
+
+#staff h1 {
+    height: 7rem;
+    text-align: center;
+    line-height: 7rem;
+    font-family: 'vanilla';
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 4rem;
+}
+
+#staff .container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#staff .border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+#staff .card {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background .8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 1s;
+}
+
+#staff .card:hover {
+    scale: 1.2;
+    box-shadow: 0px 0px 25px var(--text-light);
+}
+
+#staff .card0 {
+    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
+    background-size: 300px;
+}
+
+#staff .card0:hover {
+    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
+    background-size: 600px;
+}
+
+#staff .card0:hover .staffName {
+    opacity: 1;
+}
+
+#staff .card0:hover .telephone {
+    opacity: 1;
+    transform: translate(-30px, -10px);
+}
+
+#staff .card0:hover .fa {
+    opacity: 1;
+}
+
+#staff .card1 {
+    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
+    background-size: 300px;
+}
+
+#staff .card1:hover {
+    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
+    background-size: 600px;
+}
+
+#staff .card1:hover .staffName {
+    opacity: 1;
+}
+
+#staff .card1:hover .telephone {
+    opacity: 1;
+}
+
+#staff .card1:hover .fa {
+    opacity: 1;
+}
+
+#staff .card2 {
+    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+    background-size: 300px;
+}
+
+#staff .card2:hover {
+    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+    background-size: 600px;
+}
+
+#staff .card2:hover .staffName {
+    opacity: 1;
+}
+
+#staff .card2:hover .telephone {
+    opacity: 1;
+}
+
+#staff .card2:hover .fa {
+    opacity: 1;
+}
+
+#staff h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#staff .fa {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#staff .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
