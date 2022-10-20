@@ -90,13 +90,13 @@
     }
 
     .card__heading {
-        font-size: 1.9em;
+        font-size: 1.5em;
     }
 }
 
 @media (max-width: 365px) {
     #textHeader {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
 
     .card__content {
