@@ -54,7 +54,7 @@
 }
 
 body {
-    scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 a {
@@ -369,7 +369,7 @@ a {
     opacity: 0;
     width: 140px;
     height: 45px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'tommy', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
