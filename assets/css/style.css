@@ -264,6 +264,9 @@ a {
 }
 
 /* inicio main */
+main {
+    overflow: hidden;
+}
 
 /* cards */
 .hero-section {
@@ -395,6 +398,62 @@ a {
 .card:hover .button {
     opacity: 1;
 }
+
+/* info cards */
+#infoCard {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    right: 10%;
+    background: var(--background-dark);
+    border-radius: 3rem;
+    color: white;
+}
+
+#infoCard #contentInfoCard {
+    padding: 4rem;
+    text-align: center;
+}
+
+#infoCard #contentInfoCard h1 {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 4rem;
+}
+
+#infoCard #contentInfoCard hr {
+    height: .1rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+    border: 0;
+    background-image: radial-gradient(white, var(--background-dark));
+}
+
+#infoCard .cross {
+    position: fixed;
+    z-index: 100;
+    font-family: "icons";
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    top: 14.25%;
+    right: 13.5%;
+    scale: 2;
+    transition: all 0.3s;
+}
+
+#infoCard .cross:hover {
+    scale: 2.5;
+    text-shadow: 0px 0px 15px var(--text-light);
+}
+
+/* .card-grid .card__content .buttonContainer .button:active #infoCard {
+    display: block;
+} */
 
 /* footer */
 #footer {
