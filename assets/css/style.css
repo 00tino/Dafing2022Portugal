@@ -154,7 +154,7 @@ a {
 #navbar div {
     display: flex;
     justify-content: space-between;
-    background-color: var(--primary-color)
+    background: linear-gradient( var(--secondary-color), var(--primary-color));
 }
 
 #navbar div a {
