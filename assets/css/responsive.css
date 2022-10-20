@@ -64,7 +64,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 591px) {
     .card__heading {
         font-size: 1.3em;
     }
