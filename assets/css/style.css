@@ -170,14 +170,14 @@ a {
     transition: color .3s ease, color .3s ease;
 }
 
-#navbar div span {
+#navbar div #dafing {
     font-family: 'tommy';
     font-size: 2rem;
     margin-left: 0.5rem;
     transition: all .5s;
 }
 
-#navbar div span:hover {
+#navbar div #dafing:hover {
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     scale: 1.1;
@@ -189,7 +189,10 @@ a {
 }
 
 #navbar button {
-    background-color: transparent;
+    display: flex;
+    height: 75%;
+    background-color: #10f866;
+    border-radius: 2rem;
     color: rgb(39, 39, 39);
     font-size: 1.5rem;
     padding: .2rem .9rem;
@@ -200,14 +203,25 @@ a {
     transition: all .5s;
 }
 
-#navbar button:hover {
-    scale: 1.2;
+#navbar #wa {
+    font-family: 'tommy';
+    font-size: 1.3rem;
+    margin-top: 0.48rem;
+    transition: all 0.1s;
 }
 
-#navbar.open button {
-    background-color: white;
-    color: var(--white);
-    border-radius: 2rem;
+#navbar #whatsapp {
+    font-family: "icons";
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    transition: all 0.1s;
+}
+
+#navbar button:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    box-shadow: 0px 0px 20px #10f866;
 }
 
 #navbar ul {
