@@ -358,14 +358,14 @@ a {
     text-shadow: 0px 0px 20px white;
 }
 
-.buttonContainer {
+.card__content .buttonContainer {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.button {
+.card__content .buttonContainer .button {
     opacity: 0;
     width: 140px;
     height: 45px;
@@ -382,10 +382,10 @@ a {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    transition: all 0.3s;
+    transition: all .5s;
 }
   
-.button:hover {
+.card__content .buttonContainer .button:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
