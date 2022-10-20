@@ -220,7 +220,7 @@ a {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 200;
 }
 
 #navbar.open ul {
@@ -252,7 +252,7 @@ a {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 500;
 }
 
 #toggle:hover {
@@ -400,8 +400,9 @@ main {
 }
 
 /* info cards */
-#infoCard {
+#infoCard .infoCard {
     display: none;
+    z-index: 1000;
     position: fixed;
     width: 80%;
     height: 80%;
@@ -412,18 +413,18 @@ main {
     color: white;
 }
 
-#infoCard #contentInfoCard {
+.infoCard #contentInfoCard {
     padding: 4rem;
     text-align: center;
 }
 
-#infoCard #contentInfoCard h1 {
+.infoCard #contentInfoCard h1 {
     padding: 1rem;
     padding-bottom: 1.5rem;
     font-size: 4rem;
 }
 
-#infoCard #contentInfoCard hr {
+.infoCard #contentInfoCard hr {
     height: .1rem;
     max-width: 100%;
     margin-bottom: 2rem;
@@ -432,9 +433,8 @@ main {
     background-image: radial-gradient(white, var(--background-dark));
 }
 
-#infoCard .cross {
+.infoCard .cross {
     position: fixed;
-    z-index: 100;
     font-family: "icons";
     background-color: transparent;
     border: none;
@@ -446,7 +446,7 @@ main {
     transition: all 0.3s;
 }
 
-#infoCard .cross:hover {
+.infoCard .cross:hover {
     scale: 2.5;
     text-shadow: 0px 0px 15px var(--text-light);
 }
