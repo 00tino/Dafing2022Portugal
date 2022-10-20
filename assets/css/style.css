@@ -382,7 +382,7 @@ a {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    transition: all .5s;
+    transition: all .3s;
 }
   
 .card__content .buttonContainer .button:hover {
