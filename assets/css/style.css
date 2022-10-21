@@ -446,7 +446,8 @@ main {
 
 #infoCard #secondInfoCard,
 #infoCard #thirdInfoCard,
-#infoCard #fourthInfoCard {
+#infoCard #fourthInfoCard,
+#infoCard #sixthInfoCard {
     overflow-y: scroll;
 }
 

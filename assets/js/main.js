@@ -65,3 +65,9 @@ function sixthFunction() {
         y.style.display = "none";
     }
 }
+
+$(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
