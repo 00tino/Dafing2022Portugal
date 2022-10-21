@@ -3,6 +3,23 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    scrollbar-width: auto;
+    scrollbar-color: #022330 #333333;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #333333;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #022330;
+    border-radius: 99px;
+    border: 3px solid #022330;
 }
 
 :root {
@@ -154,7 +171,7 @@ a {
 #navbar div {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient( var(--secondary-color), var(--primary-color));
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
 }
 
 #navbar div a {
@@ -401,7 +418,7 @@ main {
     outline: none;
     transition: all .3s;
 }
-  
+
 .card__content .buttonContainer .button:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
