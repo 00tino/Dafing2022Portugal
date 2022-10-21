@@ -428,6 +428,10 @@ main {
     color: white;
 }
 
+#infoCard #secondInfoCard {
+    overflow-y: scroll;
+}
+
 .infoCard #contentInfoCard {
     padding: 4rem;
     text-align: center;
