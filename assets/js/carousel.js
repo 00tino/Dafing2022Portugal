@@ -7,7 +7,7 @@ let index = 0
 
 
 // Set interval
-let interval = setInterval(startInterval, 1500)
+let interval = setInterval(startInterval, 2500)
 
 function startInterval() {
     index++
@@ -16,7 +16,7 @@ function startInterval() {
 
 function resetInterval() {
     clearInterval(interval)
-    interval = setInterval(startInterval, 1500)
+    interval = setInterval(startInterval, 2500)
 }
 
 function moveCarousel() {
