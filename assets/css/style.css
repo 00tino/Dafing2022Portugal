@@ -507,6 +507,14 @@ main {
     border: 3px solid white;
 }
 
+/* instgram */
+#instagram {
+    background-color: var(--background-dark);
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 /* footer */
 #footer {
     background: linear-gradient(var(--black), black);
