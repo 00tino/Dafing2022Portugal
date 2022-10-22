@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/expirience.css">
     <link rel="stylesheet" type="text/css" href="assets/css/staff.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="assets/css/alert.css" </head>
 
 <body>
 
@@ -132,14 +132,6 @@
                             calles y viejos callejones que la UNESCO ha declarado Patrimonio de la Humanidad.
                         </p>
                         <div class="viewport">
-                            <input id="rad1" type="radio" name="nav">
-                            <input id="rad2" type="radio" name="nav">
-                            <input id="rad3" type="radio" name="nav">
-                            <input id="rad4" type="radio" name="nav">
-                            <input id="rad5" type="radio" name="nav">
-                            <input id="rad6" type="radio" name="nav">
-                            <input id="rad7" type="radio" name="nav">
-                            <input id="rad8" type="radio" name="nav">
                             <div class="carousel images">
                                 <img src="assets/img/3.jpg" class="image" />
                                 <img src="assets/img/15.jpg" class="image" />
@@ -149,32 +141,6 @@
                                 <img src="assets/img/20.jpg" class="image" />
                                 <img src="assets/img/21.jpg" class="image" />
                                 <img src="assets/img/22.jpg" class="image" />
-                            </div>
-                            <div class="nav">
-                                <label for="rad1">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad2">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad3">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad4">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad5">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad6">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad7">
-                                    <div class="dot"></div>
-                                </label>
-                                <label for="rad8">
-                                    <div class="dot"></div>
-                                </label>
                             </div>
                         </div>
                     </div>
@@ -558,13 +524,27 @@
             </div>
         </section>
 
-        <div id="instagram">
+        <section id="instagram">
             <h1>Recuerdos</h1>
             <hr>
-            <p>Todas las fotos publicadas con el <b>#Portugal2022dafing</b> apareceran en este apartado de la pagina.<br>
-            <b>*Los instagram donde se publican las fotos deben estar en publico y se debe poner el #Portugal2022dafing en la descripcion de la publicacion*</b></p>
+            <p>Todas las fotos publicadas con el <b>#Portugal2022dafing</b> apareceran en este apartado de la
+                pagina.<br>
+                <b>*Los instagram donde se publican las fotos deben estar en publico y se debe poner el
+                    #Portugal2022dafing en la descripcion de la publicacion*</b>
+            </p>
             <div id="instagramFeed" data-mc-src="2b42d70b-23fd-4ada-87ea-282f4d6712ff#instagram"></div>
-        </div>
+        </section>
+
+        <section class="popup">
+
+            <button id="close">&times;</button>
+            <h2>Se ha modificado el horario de un vuelo</h2>
+            <hr>
+            <p>
+                Se ha modificado el horario del vuelo de partida saliente de Ezeiza rumbo a Madrid, es horaio actual del vuelo es a las 20:00 Hs.
+            </p>
+
+        </section>
 
         <section id="footer">
             <footer>
@@ -578,7 +558,20 @@
     <script src="assets/js/fixed.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="https://cdn2.woxo.tech/a.js#6353e48c9eb05e903bb73209" async data-usrc></script>
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                2000
+            )
+        });
 
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
 </body>
 
 </html>

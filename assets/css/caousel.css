@@ -7,35 +7,35 @@ input {
 }
 
 #rad2:checked~.carousel {
-    transform: translateX(-400px);
+    transform: translateX(-700px);
 }
 
 #rad3:checked~.carousel {
-    transform: translateX(-800px);
+    transform: translateX(-1400px);
 }
 
 #rad4:checked~.carousel {
-    transform: translateX(-1200px);
+    transform: translateX(-2100px);
 }
 
 #rad5:checked~.carousel {
-    transform: translateX(-1600px);
-}
-
-#rad6:checked~.carousel {
-    transform: translateX(-2000px);
-}
-
-#rad7:checked~.carousel {
-    transform: translateX(-2400px);
-}
-
-#rad8:checked~.carousel {
     transform: translateX(-2800px);
 }
 
+#rad6:checked~.carousel {
+    transform: translateX(-3500px);
+}
+
+#rad7:checked~.carousel {
+    transform: translateX(-4200px);
+}
+
+#rad8:checked~.carousel {
+    transform: translateX(-4900px);
+}
+
 .viewport {
-    width: 350px;
+    width: 700px;
     height: 350px;
     overflow: hidden;
     position: relative;
@@ -56,6 +56,10 @@ input {
 
 .carousel>img {
     float: left;
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
+    height: 100%;
 }
 
 .carousel {
