@@ -509,10 +509,34 @@ main {
 
 /* instgram */
 #instagram {
+    text-align: center;
+    color: white;
     background-color: var(--background-dark);
     padding-top: 1.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+#instagram h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#instagram hr {
+    height: .1rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+    border: 0;
+    background-image: radial-gradient(white, var(--background-dark));
+}
+
+#instagram p {
+    margin-top: 2rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.03rem;
 }
 
 /* footer */
