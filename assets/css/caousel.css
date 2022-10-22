@@ -70,7 +70,7 @@ input {
 
 .carousel {
     position: relative;
-    width: 4900px;
+    width: 5600px;
     left: 0px;
     transition: transform 1s;
 }
