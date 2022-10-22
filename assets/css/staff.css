@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
 #coordinadores {
-    left: 50%;
-    transform: translateX(13%);
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 figure.snip1206 {
@@ -11,9 +11,9 @@ figure.snip1206 {
     position: relative;
     overflow: hidden;
     margin: 10px;
-    min-width: 440px;
-    max-width: 620px;
-    max-height: 440px;
+    min-width: 22%;
+    max-width: 31%;
+    max-height: 22%;
     width: 100%;
     color: #000000;
     text-align: center;
@@ -32,6 +32,11 @@ figure.snip1206 img {
     width: 100%;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
+}
+
+figure.snip1206 .firstCoordinador {
+    object-fit: cover;
+    height: 100%;
 }
 
 figure.snip1206:after {

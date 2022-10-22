@@ -446,9 +446,12 @@ main {
 
 #infoCard #secondInfoCard,
 #infoCard #thirdInfoCard,
-#infoCard #fourthInfoCard,
-#infoCard #sixthInfoCard {
+#infoCard #fourthInfoCard {
     overflow-y: scroll;
+}
+
+#infoCard #sixthInfoCard {
+    overflow-x: hidden;
 }
 
 .infoCard #contentInfoCard {
