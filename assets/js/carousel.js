@@ -26,5 +26,5 @@ function moveCarousel() {
         index = imagesCollection.length -1
     }
  
-    images.style.transform = `translateX(-${index * 400}px)`
+    images.style.transform = `translateX(-${index * 700}px)`
 }
