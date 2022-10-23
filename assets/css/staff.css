@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
 #coordinadores {
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 figure.snip1206 {

@@ -493,17 +493,25 @@ main {
 }
 
 /* hospedaje */
+#fourthInfoCard #pictureUbicacion {
+    width: 850px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 #fourthInfoCard #contentInfoCard img {
-    width: 40%;
-    object-fit: contain;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 400px;
+    object-fit: cover;
+    margin: 10px;
     border: 3px solid white;
 }
 
 #fourthInfoCard #contentInfoCard iframe {
-    width: 100%;
-    margin-bottom: 2rem;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
     border: 3px solid white;
 }
 
