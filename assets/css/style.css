@@ -475,12 +475,13 @@ main {
 }
 
 .infoCard .cross {
+    z-index: 900;
     position: fixed;
     font-family: "icons";
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: white;
+    color: rgb(157, 157, 157);
     top: 14.25%;
     right: 13.5%;
     scale: 2;
@@ -494,7 +495,8 @@ main {
 
 /* hospedaje */
 #fourthInfoCard #pictureUbicacion {
-    width: 850px;
+    width: 100%;
+    justify-content: center;
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 1.5rem;

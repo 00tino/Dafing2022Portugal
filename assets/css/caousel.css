@@ -1,7 +1,8 @@
 #picturesCarousel {
-    width: 710px;
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 input {
