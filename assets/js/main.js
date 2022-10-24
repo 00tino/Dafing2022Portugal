@@ -77,7 +77,7 @@ $(".hover").mouseleave(
 //         function open(event){
 //             document.querySelector(".popup").style.display = "block";
 //         },
-//         1000 
+//         200 
 //     )
 // });
 
