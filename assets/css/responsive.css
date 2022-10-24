@@ -236,6 +236,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .infoCard #contentInfoCard h1 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 591px) {
     .infoCard .cross {
         top: 13.5%;
@@ -294,6 +300,12 @@
     #allContent1 #content1 img {
         height: 30%;
         margin-top: 6rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .infoCard #contentInfoCard h1 {
+        font-size: 1.5rem;
     }
 }
 
@@ -366,17 +378,14 @@
     }
 }
 
-@media (max-width: 365px) {
-    #textHeader {
-        font-size: 3rem;
+@media (max-width: 375px) {
+    #allContent1 > p {
+        line-height: 2.5rem;
+        border-radius: 1rem 1rem 0rem 0rem;
     }
 
-    .infoCard #contentInfoCard h1 {
-        font-size: 2rem;
-    }
-
-    .card__content {
-        width: 83%;
+    #allContent1 #content1 {
+        border-radius: 0rem 0rem 1rem 1rem;
     }
 
     #allContent1 #content1 {
@@ -385,6 +394,24 @@
 
     #allContent1 > p {
         line-height: 1.5rem;
+    }
+
+    #allContent1 #content1 img {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 365px) {
+    #textHeader {
+        font-size: 3rem;
+    }
+
+    .infoCard #contentInfoCard h1 {
+        font-size: 1rem;
+    }
+
+    .card__content {
+        width: 83%;
     }
 
     .frame {
@@ -397,19 +424,6 @@
 
     .list .title {
         font-size: 2rem;
-    }
-
-    #allContent1 > p {
-        line-height: 2.5rem;
-        border-radius: 1rem 1rem 0rem 0rem;
-    }
-
-    #allContent1 #content1 {
-        border-radius: 0rem 0rem 1rem 1rem;
-    }
-
-    #allContent1 #content1 img {
-        margin-top: 8rem;
     }
 
     figure.snip1206 h2 {
@@ -446,7 +460,10 @@
         height: 450px;
     }
 
-    .infoCard #contentInfoCard h1 {
-        font-size: 1.5rem;
+    #allContent1 #content1 img {
+        margin-top: 9.5rem;
+    }
+    #allContent1 #content1 p {
+        line-height: 132%;
     }
 }
