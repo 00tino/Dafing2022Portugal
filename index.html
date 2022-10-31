@@ -13,7 +13,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/expirience.css">
     <link rel="stylesheet" type="text/css" href="assets/css/staff.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/alert.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/alert.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 
@@ -345,39 +346,82 @@
                         <hr>
                         <div id="allContent1" style="background-image: url(assets/img/8.jpg)">
                             <p><b>Restaurante "Can The Can".</b></p>
-                            <div id="content1">
-                                <p>
-                                    Una cocina llena de "portugality", que representa lo mejor de Portugal pero que a la
-                                    vez esta abierta a influencias internacionales.<br>
-                                    Sus platos se elaboran a partir ingredientes saludables y orgánicos, utilizados por
-                                    los mediterráneos durante más de 5.000 años.<br>
-                                </p>
-                                <img src="assets/img/8.jpg" />
+
+                            <div id="modal">
+                                <div class="container">
+                                    <a class="button" href="#popup">Open Modal</a>
+                                    <div class="popup" id="popup">
+                                        <div class="popup-inner">
+                                            <div class="popup__photo">
+                                                <img src="assets/img/8.jpg" alt="">
+                                            </div>
+                                            <div class="popup__text">
+                                                <h1>Restaurante "Can The Can".</h1>
+                                                <p>
+                                                    Una cocina llena de "portugality", que representa lo mejor de
+                                                    Portugal pero que a la vez esta abierta a influencias
+                                                    internacionales.<br />
+                                                    Sus platos se elaboran a partir ingredientes saludables y orgánicos,
+                                                    utilizados por los mediterráneos durante más de 5.000 años.</p>
+                                            </div>
+                                            <a class="popup__close" href="#"><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
 
                         <div id="allContent1" style="background-image: url(assets/img/5.jpg)">
                             <p><b>Restaurante "Praia no Parque".</b></p>
-                            <div id="content1">
-                                <p>
-                                    Comida, bebidas e diversão. Son los sinónimos que representan al lugar más trendy
-                                    del momento en la noche de Lisboa.<br>
-                                </p>
-                                <img src="assets/img/5.jpg" />
+
+                            <div id="modal">
+                                <div class="container">
+                                    <a class="button" href="#popup2">Open Modal</a>
+                                    <div class="popup" id="popup2">
+                                        <div class="popup-inner">
+                                            <div class="popup__photo">
+                                                <img src="assets/img/5.jpg" alt="">
+                                            </div>
+                                            <div class="popup__text">
+                                                <h1>Restaurante "Praia no Parque".</h1>
+                                                <p>Comida, bebidas e diversão. Son los sinónimos que representan al
+                                                    lugar más trendy del momento en la noche de Lisboa.</p>
+                                            </div>
+                                            <a class="popup__close" href="#"><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
 
                         <div id="allContent1" style="background-image: url(assets/img/18.jpg)">
                             <p><b>Experiencia Lisboa.</b></p>
-                            <div id="content1">
-                                <p>
-                                    Bem Vindo<br>
-                                    <br>
-                                    Visita a pie de la ciudad para ir descubriendo de a poco la luminosa capital a
-                                    orillas del tajo.<br>
-                                </p>
-                                <img src="assets/img/18.jpg" />
+
+                            <div id="modal">
+                                <div class="container">
+                                    <a class="button" href="#popup3">Open Modal</a>
+                                    <div class="popup" id="popup3">
+                                        <div class="popup-inner">
+                                            <div class="popup__photo">
+                                                <img src="assets/img/18.jpg" alt="">
+                                            </div>
+                                            <div class="popup__text">
+                                                <h1>Experiencia Lisboa.</h1>
+                                                <p>Bem Vindo
+                                                    <br />
+                                                    <br />
+                                                    Visita a pie de la ciudad para ir descubriendo de a poco la luminosa
+                                                    capital a orillas del tajo.
+                                                </p>
+                                            </div>
+                                            <a class="popup__close" href="#"><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -395,12 +439,12 @@
                         <br>
                         <br>
                         <p>
-                        El Hotel Fontecruz Lisboa está destinado a convertirse en una referencia de exclusividad,
-                        sofisticación y elegancia en el corazón de Lisboa.<br>
-                        Con una ubicación privilegiada en la Avenida da Liberdade, el Hotel Fontecruz Lisboa es el
-                        lugar ideal para disfrutar de la visita a la capital portuguesa. Con una decoración
-                        portuguesa cuidadosamente elaborada y combinada con el lujo moderno, Fontecruz Lisboa se
-                        transforma en uno de los mejores hoteles 5 estrellas de la ciudad.
+                            El Hotel Fontecruz Lisboa está destinado a convertirse en una referencia de exclusividad,
+                            sofisticación y elegancia en el corazón de Lisboa.<br>
+                            Con una ubicación privilegiada en la Avenida da Liberdade, el Hotel Fontecruz Lisboa es el
+                            lugar ideal para disfrutar de la visita a la capital portuguesa. Con una decoración
+                            portuguesa cuidadosamente elaborada y combinada con el lujo moderno, Fontecruz Lisboa se
+                            transforma en uno de los mejores hoteles 5 estrellas de la ciudad.
                         </p>
 
                         <div id="pictureUbicacion">
@@ -417,15 +461,15 @@
                         <br>
                         <br>
                         <p>
-                        Pestana Porto - A Brasileira es el hotel 5 estrellas más nuevo de Oporto y ubicado en el
-                        centro de la ciudad. Solo se tardan 4 minutos a pie a la icónica Avenida dos Aliados y 12
-                        minutos al distrito de Ribeira.<br>
-                        Construido en el famoso Café A Brasileira de Oporto, el primero en servir café en una taza a
-                        principiosdel siglo XX, y reconocido con el lema "el mejor café viene de A Brasileira". El
-                        nuevo Histórico ha sabido conservar las características arquitectónicas originales del
-                        edificio.<br>
-                        Este hotel de lujo, cerca del Teatro Sá da Bandeira y de la famosa Estación de tren de São
-                        Bento.
+                            Pestana Porto - A Brasileira es el hotel 5 estrellas más nuevo de Oporto y ubicado en el
+                            centro de la ciudad. Solo se tardan 4 minutos a pie a la icónica Avenida dos Aliados y 12
+                            minutos al distrito de Ribeira.<br>
+                            Construido en el famoso Café A Brasileira de Oporto, el primero en servir café en una taza a
+                            principiosdel siglo XX, y reconocido con el lema "el mejor café viene de A Brasileira". El
+                            nuevo Histórico ha sabido conservar las características arquitectónicas originales del
+                            edificio.<br>
+                            Este hotel de lujo, cerca del Teatro Sá da Bandeira y de la famosa Estación de tren de São
+                            Bento.
                         </p>
                         <div id="pictureUbicacion">
                             <img src="assets/img/4.jpg" />
@@ -548,7 +592,8 @@
             <h2>Se ha modificado el horario de un vuelo</h2>
             <hr>
             <p>
-                Se ha modificado el horario del vuelo de partida saliente de Ezeiza rumbo a Madrid, es horaio actual del vuelo es a las 20:00 Hs.
+                Se ha modificado el horario del vuelo de partida saliente de Ezeiza rumbo a Madrid, es horaio actual del
+                vuelo es a las 20:00 Hs.
             </p>
 
         </section>
@@ -565,6 +610,7 @@
     <script src="assets/js/fixed.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="https://cdn2.woxo.tech/a.js#6353e48c9eb05e903bb73209" async data-usrc></script>
+
     <!-- <script type="text/javascript">
         window.addEventListener("load", function () {
             setTimeout(
